@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<NationalParks> 
+	<!--First national park, given in assignment doc-->
+	<NationalPark Rating="4.9">
+		<Name>Grand Canyon National Park</Name>
+		<Phone>928-638-7496</Phone>
+		<Phone>888-297-2757</Phone>
+		<Phone>866-499-2574</Phone>
+		<Address NearestAirport="Flagstaff">
+			<Number>8</Number>
+			<Street>S Entrance Rd</Street>
+			<City>Grand Canyon</City>
+			<State>AZ</State>
+			<Zip>86023</Zip>
+		</Address>
+		
+	</NationalPark>
+	
+	<!--Second national park-->
+	<NationalPark>
+		<Name>Yosemite National Park</Name>
+		<Phone>209-372-0200</Phone>
+		<Phone>209-372-0826</Phone>
+		<Address NearestAirport="San Francisco International Airport">
+			<Number>9035</Number>
+			<Street>Village Drive</Street>
+			<City>Yosemite</City>
+			<State>CA</State>
+			<Zip>95389</Zip>
+		</Address>
+	</NationalPark>
+	
+	<!--Third national park-->
+	<NationalPark Rating="4.8">
+		<Name>Yellowstone National Park</Name>
+		<Phone>307-344-7381</Phone>
+		<Address NearestAirport="Yellowstone Airport">
+			<Number>2</Number>
+			<Street>Officers Row</Street>
+			<City>Yellowstone</City>
+			<State>WY</State>
+			<Zip>82190</Zip>
+		</Address>
+	</NationalPark>
+	
+	<!--Fourth national park-->
+	<NationalPark>
+		<Name>Zion National Park</Name>
+		<Phone>435-772-3256</Phone>
+		<Address NearestAirport="St. George Regional Airport">
+			<Number>1</Number>
+			<Street>Zion Park Blvd</Street>
+			<City>Springdale</City>
+			<State>UT</State>
+			<Zip>84767</Zip>
+		</Address>
+	</NationalPark>
+	
+	<!--Fifth national park-->
+	<NationalPark>
+		<Name>Acadia National Park</Name>
+		<Phone>209-288-3338</Phone>
+		<Address NearestAirport="Hancock County-Bar Harbor Airport">
+			<Number>20</Number>
+			<Street>McFarLand Hill Drive</Street>
+			<City>Bar Harbor</City>
+			<State>ME</State>
+			<Zip>04609</Zip>
+		</Address>
+	</NationalPark>
+	
+	<!--Sixth national park-->
+	<NationalPark>
+		<Name>Rocky Mountain National Park</Name>
+		<Phone>970-586-1206</Phone>
+		<Address NearestAirport="Denver International Airport">
+			<Number>1000</Number>
+			<Street>Bear Lake Road</Street>
+			<City>Estes Park</City>
+			<State>CO</State>
+			<Zip>80517</Zip>
+		</Address>
+	</NationalPark>
+	
+	<!--Seventh national park-->
+	<NationalPark>
+		<Name>Joshua Tree National Park</Name>
+		<Phone>760-367-5500</Phone>
+		<Address NearestAirport="Palm Springs International Airport">
+			<Number>74485</Number>
+			<Street>National Park Drive</Street>
+			<City>Twentynine Palms</City>
+			<State>CA</State>
+			<Zip>92277</Zip>
+		</Address>
+	</NationalPark>
+	
+	<!--Eighth national park-->
+	<NationalPark>
+		<Name>Glacier National Park</Name>
+		<Phone>406-888-7800</Phone>
+		<Address NearestAirport="Glacier Park International Airport">
+			<Number>64</Number>
+			<Street>Grinnell Drive</Street>
+			<City>West Glacier</City>
+			<State>MT</State>
+			<Zip>59936</Zip>
+		</Address>
+	</NationalPark>
+	
+	<!--Ninth national park-->
+	<NationalPark>
+		<Name>Denali National Park</Name>
+		<Phone>907-683-9532</Phone>
+		<Address NearestAirport="Ted Stevens Anchorage International Airport">
+			<Number>1</Number>
+			<Street>Park Road</Street>
+			<City>Denali</City>
+			<State>AK</State>
+			<Zip>99755</Zip>
+		</Address>
+	</NationalPark>
+	
+	<!--Tenth national park-->
+	<NationalPark>
+		<Name>Everglades National Park</Name>
+		<Phone>305-242-7700</Phone>
+		<Address NearestAirport="Miami International Airport">
+			<Number>40001</Number>
+			<Street>State Road</Street>
+			<City>Homestead</City>
+			<State>FL</State>
+			<Zip>33034</Zip>
+		</Address>
+	</NationalPark>
+	
+	<!--Eleventh national park-->
+	<NationalPark>
+		<Name>Great Smoky Mountains National Park</Name>
+		<Phone>865-436-1200</Phone>
+		<Address NearestAirport="McGhee Tyson Airport">
+			<Number>107</Number>
+			<Street>Park Headquarters Road</Street>
+			<City>Gatlinburg</City>
+			<State>TN</State>
+			<Zip>37738</Zip>
+		</Address>
+	</NationalPark>
+	
+</NationalParks>
