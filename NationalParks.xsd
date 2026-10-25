@@ -2,7 +2,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<!--Root Element-->
 	<xs:element name="NationalParks">
-
 		<xs:annotation>
 			<xs:documentation>
 				National Parks XML Schema
@@ -11,7 +10,6 @@
 				The schema enforces specific formats for phone numbers, state abbreviations, and zip codes to ensure data consistency.
 			</xs:documentation>
 		</xs:annotation>
-
 		<!--Elements Definition-->
 		<xs:complexType>
 			<xs:sequence>
@@ -31,17 +29,30 @@
 							<xs:element name="Address" maxOccurs="1">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="Number" type="xs:string" maxOccurs="1">
-											<!--
+										<xs:element name="Number" maxOccurs="1">
+											
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
-													<xs:pattern value="[0-9]{1,3}"/>
+													<xs:pattern value="[0-9]{1,5}"/>
 												</xs:restriction>
 											</xs:simpleType>
-											-->
+											
 										</xs:element>
-										<xs:element name="Street" type="xs:string" maxOccurs="1"/>
-										<xs:element name="City" type="xs:string" maxOccurs="1"/>
+										<xs:element name="Street" maxOccurs="1">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="[A-Za-z0-9 ]+"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="City"  maxOccurs="1">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="[A-Za-z ]+"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										
 										<xs:element name="State" maxOccurs="1">
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
@@ -79,7 +90,5 @@
 				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
-		
 	</xs:element>
-
 </xs:schema>

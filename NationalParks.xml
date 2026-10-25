@@ -3,7 +3,7 @@
 <NationalParks> 
 	<!--First national park, given in assignment doc-->
 	<NationalPark Rating="4.9">
-		<Name>Grand Canyon National Park</Name>
+		<Name>Grand Canyon</Name>
 		<Phone>928-638-7496</Phone>
 		<Phone>888-297-2757</Phone>
 		<Phone>866-499-2574</Phone>
