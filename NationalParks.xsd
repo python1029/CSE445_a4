@@ -31,11 +31,7 @@
 									<xs:sequence>
 										<xs:element name="Number" maxOccurs="1">
 											
-											<xs:simpleType>
-												<xs:restriction base="xs:string">
-													<xs:pattern value="[0-9]{1,5}"/>
-												</xs:restriction>
-											</xs:simpleType>
+											
 											
 										</xs:element>
 										<xs:element name="Street" maxOccurs="1">
