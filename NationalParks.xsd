@@ -73,7 +73,7 @@
 									<xs:attribute name="NearestAirport" use="required">
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:pattern value="[A-Za-z ]+"/>	
+												<xs:pattern value="[A-Za-z0-9 ]+"/>	
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>	
