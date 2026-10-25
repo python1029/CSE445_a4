@@ -29,7 +29,7 @@
 							<xs:element name="Address" maxOccurs="1">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="Number" maxOccurs="1">
+										<xs:element name="Number" type ="xs:string" maxOccurs="1">
 											
 											
 											
@@ -66,7 +66,7 @@
 										
 									</xs:sequence>
 									<!--Define NearestAirport attribute, it's required-->
-									<xs:attribute name="NearestAirport" use="required">
+									<xs:attribute name="NearestAirport" type="xs:string" use="required">
 										
 									</xs:attribute>	
 								</xs:complexType>
