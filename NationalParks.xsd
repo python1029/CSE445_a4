@@ -41,14 +41,14 @@
 										<xs:element name="Street" maxOccurs="1">
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
-													<xs:pattern value="[A-Za-z0-9 ]+"/>
+													<xs:pattern value="[A-Za-z0-9 ]+([ .'-][A-Za-z0-9]+)*"/>
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:element>
 										<xs:element name="City"  maxOccurs="1">
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
-													<xs:pattern value="[A-Za-z ]+"/>
+													<xs:pattern value="[A-Za-z ]+([ .'-][A-Za-z]+)*"/>
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:element>
@@ -71,11 +71,7 @@
 									</xs:sequence>
 									<!--Define NearestAirport attribute, it's required-->
 									<xs:attribute name="NearestAirport" use="required">
-										<xs:simpleType>
-											<xs:restriction base="xs:string">
-												<xs:pattern value="[A-Za-z0-9 ]+"/>	
-											</xs:restriction>
-										</xs:simpleType>
+										
 									</xs:attribute>	
 								</xs:complexType>
 								
