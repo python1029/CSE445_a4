@@ -2,23 +2,23 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<!--Root Element-->
 	<xs:element name="NationalParks">
-		<xs:annotation>
+		<!-- <xs:annotation>
 			<xs:documentation>
 				National Parks XML Schema
 				The schema defines the structure of the National Parks XML file. 
 				It includes elements for Park, Name, Phone, Address, and attributes for NearestAirport and Rating. 
 				The schema enforces specific formats for phone numbers, state abbreviations, and zip codes to ensure data consistency.
 			</xs:documentation>
-		</xs:annotation>
+		</xs:annotation> -->
 		<!--Elements Definition-->
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="NationalPark"  maxOccurs="unbounded">
+				<xs:element name="NationalPark" minOccurs="1" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Name" type="xs:string" maxOccurs="1"/>
 									<!--Make sure phone is in format 123-456-7890, there can be many phone numbers-->
-							<xs:element name="Phone" maxOccurs="unbounded">
+							<xs:element name="Phone" minOccurs="1" maxOccurs="unbounded">
 								<xs:simpleType>
 								<xs:restriction base="xs:string">
 									<xs:pattern value="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
@@ -26,37 +26,37 @@
 								</xs:simpleType>
 							</xs:element>
 								<!--Address element contains Number, Street, City, State, and Zip elements-->
-							<xs:element name="Address" maxOccurs="1">
+							<xs:element name="Address" minOccurs="1" maxOccurs="1">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="Number" type ="xs:string" maxOccurs="1">
+										<xs:element name="Number" type ="xs:string" minOccurs="1" maxOccurs="1">
 											
 											
 											
 										</xs:element>
-										<xs:element name="Street" maxOccurs="1">
-											<xs:simpleType>
+										<xs:element name="Street" minOccurs="1" maxOccurs="1">
+										<!--	<xs:simpleType>
 												<xs:restriction base="xs:string">
 													<xs:pattern value="[A-Za-z0-9 ]+([ .'-][A-Za-z0-9]+)*"/>
 												</xs:restriction>
-											</xs:simpleType>
+											</xs:simpleType> -->
 										</xs:element>
-										<xs:element name="City"  maxOccurs="1">
-											<xs:simpleType>
+										<xs:element name="City"  minOccurs="1" maxOccurs="1">
+											<!--	<xs:simpleType>
 												<xs:restriction base="xs:string">
 													<xs:pattern value="[A-Za-z ]+([ .'-][A-Za-z]+)*"/>
 												</xs:restriction>
-											</xs:simpleType>
+											</xs:simpleType> -->
 										</xs:element>
 										
-										<xs:element name="State" maxOccurs="1">
+										<xs:element name="State" minOccurs="1" maxOccurs="1">
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
 													<xs:pattern value="[A-Z]{2}"/>
 												</xs:restriction>
 											</xs:simpleType>	
 										</xs:element>
-										<xs:element name="Zip" maxOccurs="1">
+										<xs:element name="Zip" minOccurs="1" maxOccurs="1">
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
 													<xs:pattern value="[0-9]{5}"/>
